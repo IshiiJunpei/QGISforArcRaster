@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">          
+   <section data-markdown data-separator="^\n---$" data-vertical="^\n>>>$">
+    <script type="text/template">
+
+## 考古学のためのGIS
+
+
+###### Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
+
+---
+### ラスタデータを読み込む
+
+レイヤ→レイヤの追加→ラスタレイヤの追加
+
+<img src="01.png">
+
+---
+
+### 段彩図を作成する
+
+レイヤパネルから、読み込んだラスタレイヤ（merge_utm）をダブルクリック
+
+<img src="02.png">
+
+---
+
+1. 「レンダータイプ」のドロップリストから「単バンド疑似カラー」を選択します。
+2. 「新規カラーマップを作成」の下にあるドロップリストから好きなカラーマップを選びます。
+3. 「モード」を「等間隔」に変更します。
+4. 「分類数」はデフォルトは5になっていますが、まずはこれで試します。
+5. 「色の補完」は「離散的」を選ぶ。
+
+---
+
+<img src="03.png">
+
+---
+
+<img src="05.png">
+
+---
+
+### 段彩図の見た目を変える
+
+1. カラーマップをBuGnに変更する。
+2. 「色の補完」を「線形」に変更する。
+
+<img src="06.png">
+
+---
+
+<img src="07.png">
+
+---
+
+### 陰影図を作成する
+
+1. 「ラスタ」→「地形解析」→「陰影図」
+2. 「標高レイヤ」はDEMデータを指定します。この場合は「merge_utm」です。
+3. 「出力レイヤ」は新たに作成される陰影図の保存先を指定します。
+	- 拡張子「.tif」はつけなくても大丈夫
+4. 「出力形式」はデフォルトの「GeoTIFF」
+5. 「Zファクタ」はデフォルトの「2」
+6. 「イルミネーション」もデフォルトのままです。
+
+---
+<img src="08.png">
+
+---
+
+<img src="09.png">
+
+---
+
+### 陰影図の透過率を変える
+
+1. 陰影図のレイヤ（Shapeレイヤ）を段彩図レイヤより上にします。
+2. 陰影図レイヤをダブクリックして、レイヤプロパティを開きます。
+3. 左側のタブの上から3番目の「透過性」タブを開きます。
+4.  「全体の透過率」のスライダーを調整します。ここでは70%に設定
+	- なお、透過率は70%〜80%の間がもっとも適切に感じます。
+
+---
+
+<img src="10.png">
+
+---
+
+<img src="11.png">
+
+---
+
+### 陰影図レイヤを「乗算」で重ね合わせ
+
+1. 陰影図レイヤのレイヤプロパティを開きます。
+2. 「透過性」タブを開いて、「全体の透過率」を0%にします。
+
+---
+
+<img src="12.png">
+
+---
+
+1. 左側のタブの上から2番目の「スタイル」タブを開きます。
+2. 下の方にある「カラーレンダリング」の「混合モード」を「乗算」に設定します。
+
+<img src="13.png">
+
+---
+
+<img src="14.png">
+
+---
+
+### 段彩図と陰影図の重ね合わせのバリエーション
+
+いくつかのバリエーションを示します。
+
+いろいろ試してわかりやすいラスタ地形図を作成してください。
+
+---
+
+1. カラーマップをBuGn
+2. 「色の補完」を「離散的」
+3. 標高0を青くした
+
+<img src="15.png">
+
+---
+
+1. カラーマップをSpectral
+2. 「色の補完」を「線形」
+
+<img src="16.png">
+
+---
+
+1. カラーマップをRdYlGn
+2. 「色の補完」を「線形」
+
+<img src="17.png">
+
+---
+
+# おしまい
+
+    </script>
+</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		dependencies: [
+{ src: 'reveal.js-2.6.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'reveal.js-2.6.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+]
+	</body>
+</html>
