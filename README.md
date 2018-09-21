@@ -16,6 +16,7 @@
 
 -  [スライド](https://IshiiJunpei.github.io/QGISforArcRaster)
 
+---
 # ラスタ地図を美しく表現する
 
 Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
@@ -27,7 +28,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="01.png" width=70%>
 
-
+---
 ### 段彩図の作成
 
 - 標高ラスタに色を付けます
@@ -37,19 +38,18 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="02.png" width=60%>
 
-
+---
 - 「レンダータイプ」のドロップリストから「単バンド疑似カラー」を選択します。
 - 「新規カラーマップを作成」の下にあるドロップリストから好きなカラーマップを選びます。
 - 「モード」を「等間隔」に変更します。
 - 「分類数」はデフォルトは5になっていますが、まずはこれで試します。
 - 「色の補完」は「離散的」を選ぶ。
 
-
 <img src="03.png" width=80%>
 
 <img src="05.png" width=80%>
 
-
+---
 ### 段彩図の見た目を変える
 
 - カラーマップをBuGnに変更する。
@@ -59,7 +59,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="07.png" width=80%>
 
-
+---
 ### 陰影図を作成する
 
 標高ラスタから陰影図を作成します。
@@ -70,9 +70,9 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="08.png" width=50%>
 
-
 <img src="09.png" width=80%>
 
+---
 ### 陰影図の透過率を変える
 
 陰影図の透過率を変更して段彩図と陰影図が絶妙に重なった図を作成します。
@@ -85,6 +85,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="11.png" width=80%>
 
+---
 ### 「乗算」による重ね合わせ
 
 レンダリングの方法を変えることで、異なる視覚効果が得られます。
@@ -101,9 +102,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="14.png" width=80%>
 
-- 段彩図と陰影図の重ね合わせのバリエーション
-- いくつかのバリエーションを示します。
-- いろいろ試してわかりやすいラスタ地形図を作成してください。
+### 段彩図と陰影図の重ね合わせのバリエーション
 
 - カラーマップをBuGn
 - 「色の補完」を「離散的」
@@ -111,13 +110,15 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="15.png" width=70%>
 
+---
 - カラーマップをSpectral
 - 「色の補完」を「線形」
 
 <img src="16.png" width=70%>
 
-1. カラーマップをRdYlGn
-2. 「色の補完」を「線形」
+---
+- カラーマップをRdYlGn
+- 「色の補完」を「線形」
 
 <img src="17.png" width=70%>
 
