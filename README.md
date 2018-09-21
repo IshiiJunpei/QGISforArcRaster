@@ -26,7 +26,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 レイヤ→レイヤの追加→ラスタレイヤの追加
 
-<img src="01.png" width=70%>
+<img src="01.png" width=90%>
 
 ---
 ### 段彩図の作成
@@ -45,9 +45,9 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - 「分類数」はデフォルトは5になっていますが、まずはこれで試します。
 - 「色の補完」は「離散的」を選ぶ。
 
-<img src="03.png" width=80%>
+<img src="03.png" width=90%>
 
-<img src="05.png" width=80%>
+<img src="05.png" width=90%>
 
 ---
 ### 段彩図の見た目を変える
@@ -55,9 +55,9 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - カラーマップをBuGnに変更する。
 - 「色の補完」を「線形」に変更する。
 
-<img src="06.png" width=60%>
+<img src="06.png" width=70%>
 
-<img src="07.png" width=80%>
+<img src="07.png" width=90%>
 
 ---
 ### 陰影図を作成する
@@ -70,7 +70,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="08.png" width=50%>
 
-<img src="09.png" width=80%>
+<img src="09.png" width=90%>
 
 ---
 ### 陰影図の透過率を変える
@@ -81,9 +81,9 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - 「全体の透過率」のスライダーを調整します。ここでは70%に設定
 	- なお、透過率は70%〜80%の間がもっとも適切に感じます。
 
-<img src="10.png" width=50%>
+<img src="10.png" width=70%>
 
-<img src="11.png" width=80%>
+<img src="11.png" width=90%>
 
 ---
 ### 「乗算」による重ね合わせ
@@ -93,14 +93,14 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - 陰影図レイヤのレイヤプロパティを開きます。
 - 「透過性」タブを開いて、「全体の透過率」を0%にします。
 
-<img src="12.png" width=50%>
+<img src="12.png" width=70%>
 
 - 左側のタブの上から2番目の「スタイル」タブを開きます。
 - 下の方にある「カラーレンダリング」の「混合モード」を「乗算」に設定します。
 
-<img src="13.png" width=50%>
+<img src="13.png" width=70%>
 
-<img src="14.png" width=80%>
+<img src="14.png" width=90%>
 
 ### 段彩図と陰影図の重ね合わせのバリエーション
 
@@ -108,19 +108,19 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - 「色の補完」を「離散的」
 -  標高0を青に（海風に）
 
-<img src="15.png" width=70%>
+<img src="15.png" width=90%>
 
 ---
 - カラーマップをSpectral
 - 「色の補完」を「線形」
 
-<img src="16.png" width=70%>
+<img src="16.png" width=90%>
 
 ---
 - カラーマップをRdYlGn
 - 「色の補完」を「線形」
 
-<img src="17.png" width=70%>
+<img src="17.png" width=90%>
 
 
 ### おしまい
