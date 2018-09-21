@@ -47,7 +47,6 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="03.png" width=80%>
 
----
 <img src="05.png" width=80%>
 
 
